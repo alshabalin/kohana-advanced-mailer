@@ -1,0 +1,19 @@
+{
+  "name": "alshabalin/kohana-advanced-mailer",
+  "type": "kohana-module",
+  "description": "",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexei Shabalin",
+      "email": "mail@alshabalin.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "composer/installers": "~1.0",
+    "kohana/core": "~3.3.3",
+    "alshabalin/kohana-advanced-view": "dev-master",
+    "swiftmailer/swiftmailer": "~5.3"
+  }
+}
