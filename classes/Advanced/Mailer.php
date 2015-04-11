@@ -14,7 +14,7 @@ class Advanced_Mailer {
 
   protected $defaults = [];
 
-  public static function factory($mailer)
+  public static function factory($mailer, $action)
   {
     $mailer_class = 'Mailer_' . $mailer;
     return new $mailer_class($action);
@@ -45,7 +45,7 @@ class Advanced_Mailer {
 
   protected function mail($params = [])
   {
-    $params = $this->defaults + $params;
+    $params = $params + $this->defaults;
 
     $to          = Arr::get($params, 'to');
     $subject     = Arr::get($params, 'subject');
